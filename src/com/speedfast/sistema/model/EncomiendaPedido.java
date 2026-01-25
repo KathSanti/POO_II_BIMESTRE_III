@@ -3,13 +3,13 @@ package com.speedfast.sistema.model;
 public class EncomiendaPedido extends Pedido {
 
 
-    public EncomiendaPedido(String idPedido, String direcccionEntrega, double distanciaKm, String repartidor) {
-        super(idPedido, direcccionEntrega, distanciaKm, repartidor);
+    public EncomiendaPedido(String idPedido, String direccionEntrega, double distanciaKm, String repartidor) {
+        super(idPedido, direccionEntrega, distanciaKm, repartidor);
     }
 
     @Override
     public void asignarRepartidor() {
-        System.out.println("Repartidor asignado : " + repartidor + "embalaje especial");
+        System.out.println("\nRepartidor asignado : " + repartidor + ", pedido con embalaje especial\n");
     }
 
 

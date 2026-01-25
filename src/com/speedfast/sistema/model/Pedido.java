@@ -1,19 +1,19 @@
 package com.speedfast.sistema.model;
 
-import com.speedfast.sistema.capability.Cancelable;
+
 import com.speedfast.sistema.capability.Despachable;
 
-public abstract class Pedido implements Despachable, Cancelable {
+public abstract class Pedido implements Despachable {
 
     protected String idPedido;
-    protected String direcccionEntrega;
+    protected String direccionEntrega;
     protected double distanciaKm;
     protected String repartidor;
 
 
     public Pedido(String idPedido, String direcccionEntrega, double distanciaKm, String repartidor) {
         this.idPedido = idPedido;
-        this.direcccionEntrega = direcccionEntrega;
+        this.direccionEntrega = direcccionEntrega;
         this.distanciaKm = distanciaKm;
         this.repartidor = repartidor;
     }
@@ -28,17 +28,12 @@ public abstract class Pedido implements Despachable, Cancelable {
         System.out.println("Repartidor " + nombre + " asignado manualmente al pedido #" + idPedido);
     }
 
-    //Metodo para agregar mas funciones
 
-    public final void ejecutarPedido(){
-        mostrarResumen();
-
-    }
 
     public void mostrarResumen(){
         System.out.println("========= Resumen Pedido ==========");
         System.out.println("ID pedido: " + idPedido);
-        System.out.println("Dirección entrega: " + direcccionEntrega);
+        System.out.println("Dirección entrega: " + direccionEntrega);
         System.out.println("Repartidor: " + repartidor);
         System.out.println("Distancia: " + distanciaKm + "km");
         System.out.println("Tiempo de espera : " + calcularTiempodeEspera(distanciaKm) + " minutos");
@@ -55,12 +50,8 @@ public abstract class Pedido implements Despachable, Cancelable {
         System.out.println("El pedido #" + idPedido + " ha salido a ruta.");
     }
 
-    @Override
-    public void cancelar() {
-
-        System.out.println("El pedido #" + idPedido+ " ha sido cancelado.");
-
+    public String getIdPedido() {
+        return idPedido;
     }
-
 
 }

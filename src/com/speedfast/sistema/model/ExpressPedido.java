@@ -2,13 +2,13 @@ package com.speedfast.sistema.model;
 
 public class ExpressPedido extends Pedido{
 
-    public ExpressPedido(String idPedido, String direcccionEntrega, double distanciaKm, String repartidor) {
-        super(idPedido, direcccionEntrega, distanciaKm, repartidor);
+    public ExpressPedido(String idPedido, String direccionEntrega, double distanciaKm, String repartidor) {
+        super(idPedido, direccionEntrega, distanciaKm, repartidor);
     }
 
     @Override
     public void asignarRepartidor() {
-        System.out.println("Repartidor asignado : " + repartidor + "se dirije a lo rayomacqueen");
+        System.out.println("\nRepartidor asignado : " + repartidor + ", se dirije a lo rayomacqueen\n");
     }
 
 

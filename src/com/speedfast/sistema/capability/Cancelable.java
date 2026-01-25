@@ -2,6 +2,6 @@ package com.speedfast.sistema.capability;
 
 public interface Cancelable {
 
-     void cancelar();
-    
+
+    void cancelar(String idPedido);
 }

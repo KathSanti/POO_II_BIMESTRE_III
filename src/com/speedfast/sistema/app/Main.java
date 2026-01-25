@@ -21,28 +21,23 @@ public class Main {
 
 
         controlador.recibirPedido(p1);
+        p1.asignarRepartidor();
         controlador.recibirPedido(p2);
+        p2.asignarRepartidor();
         controlador.recibirPedido(p3);
+        p3.asignarRepartidor();
 
 
-        System.out.println(" ==== Detalle despacho ====");
+        System.out.println("\n==== Detalle despacho ====");
         p1.despachar();
 
-        System.out.println(" ==== Cancelar Pedido ====");
-        p2.cancelar();
+        System.out.println("\n==== Cancelar Pedido ====");
+
+        controlador.cancelar(p2.getIdPedido());
+
 
         // Prueba Ver Historial (Interfaz Rastreable implementada en Controlador)
         controlador.verHistorial();
-
-
-
-
-
-
-
-
-
-
 
 
 
