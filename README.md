@@ -45,3 +45,9 @@ El sistema aprovecha el polimorfismo para adaptar comportamientos:
         ├── EncomiendaPedido.java
         └── ExpressPedido.java
     
+## Funcionalidades Implementadas
+
+1.  **Cálculo de Tiempos:** Algoritmos diferenciados según el tipo de pedido.
+2.  **Gestión de Repartidores:** Asignación con lógica personalizada por tipo de envío.
+3.  **Historial de Entregas:** Visualización de todos los pedidos procesados ( `foreach`).
+4.  **Gestión de Estado:** Capacidad de despachar y cancelar pedidos dinámicamente.
