@@ -8,8 +8,8 @@ Para cumplir con los requerimientos de escalabilidad y mantenibilidad, se tomaro
 
 ### 1. Abstracción y Jerarquía de Clases (`Model`)
 Se definió `Pedido` como una **Clase Abstracta**.
-* **¿Por qué?** Todos los pedidos comparten atributos base (`id`, `direccion`, `distancia`), pero la forma de calcular el tiempo de entrega es única para cada tipo.
-* **Beneficio:** Obliga a las clases hijas (`ComidaPedido`, `EncomiendaPedido`, `ExpressPedido`) a implementar sus propias reglas de negocio para el cálculo de tiempos, garantizando integridad en los datos.
+* Todos los pedidos comparten atributos base (`id`, `direccion`, `distancia`), pero la forma de calcular el tiempo de entrega es única para cada tipo.
+* **Beneficio:** Obliga a las clases hijas (`ComidaPedido`, `EncomiendaPedido`, `ExpressPedido`) a implementar sus propias reglas de negocio para el cálculo de tiempos.
 
 ### 2. Desacoplamiento mediante Interfaces (`Capability`)
 Se implementó un diseño modular separando las capacidades funcionales en interfaces (`capabilities`), distribuyéndolas según la responsabilidad del objeto:
