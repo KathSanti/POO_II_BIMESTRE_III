@@ -32,15 +32,15 @@ El sistema aprovecha el polimorfismo para adaptar comportamientos:
 
     com.speedfast.sistema
     ├── app
-    │   └── Main.java            # Punto de entrada y simulación del sistema
-    ├── capability               # Interfaces (Contratos de comportamiento)
+    │   └── Main.java            # Punto de entrada de datos y simulación del sistema
+    ├── capability               # Interfaces (Contratos para comportamientos)
     │   ├── Cancelable.java
     │   ├── Despachable.java
     │   └── Rastreable.java
-    ├── controlador              # Lógica de gestión y manipulación de listas
+    ├── controlador              # Lógica de gestión y manipulación de listas de datos
     │   └── ControladorEnvios.java
-    └── model                    # Entidades y lógica de negocio específica
-        ├── Pedido.java          # Clase padre Abstracta
+    └── model                    # Entidades y lógica específica 
+        ├── Pedido.java          # Super clase Abstracta
         ├── ComidaPedido.java
         ├── EncomiendaPedido.java
         └── ExpressPedido.java
