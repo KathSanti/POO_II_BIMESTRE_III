@@ -28,17 +28,20 @@ El sistema aprovecha el polimorfismo para adaptar comportamientos:
 
 ## Estructura del Proyecto
 
-com.speedfast.sistema
-├── app
-│   └── Main.java            # Punto de entrada y simulación del sistema
-├── capability               # Interfaces (Contratos de comportamiento)
-│   ├── Cancelable.java
-│   ├── Despachable.java
-│   └── Rastreable.java
-├── controlador              # Lógica de gestión y manipulación de listas
-│   └── ControladorEnvios.java
-└── model                    # Entidades y lógica de negocio específica
-    ├── Pedido.java          # Clase padre Abstracta
-    ├── ComidaPedido.java
-    ├── EncomiendaPedido.java
-    └── ExpressPedido.java
+
+
+    com.speedfast.sistema
+    ├── app
+    │   └── Main.java            # Punto de entrada y simulación del sistema
+    ├── capability               # Interfaces (Contratos de comportamiento)
+    │   ├── Cancelable.java
+    │   ├── Despachable.java
+    │   └── Rastreable.java
+    ├── controlador              # Lógica de gestión y manipulación de listas
+    │   └── ControladorEnvios.java
+    └── model                    # Entidades y lógica de negocio específica
+        ├── Pedido.java          # Clase padre Abstracta
+        ├── ComidaPedido.java
+        ├── EncomiendaPedido.java
+        └── ExpressPedido.java
+    
