@@ -8,7 +8,7 @@ public class ComidaPedido extends Pedido {
     }
 
     @Override
-    public void despacho() {
+    public void prepararDdespacho() {
         System.out.println("\nTipo de prepación : "+ " mochila termica confirmada" + "-" + "["+ idPedido +"]\n");
 
     }

@@ -23,7 +23,7 @@ public class Repartidor implements Runnable{
             pedido.asignarRepartidor(this.nombreRepartidor);
 
             //Ejecutar el despacho del pedido de acuerdo al tipo
-            pedido.despacho();
+            pedido.prepararDdespacho();
 
             try {
 

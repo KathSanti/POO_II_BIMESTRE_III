@@ -19,7 +19,10 @@ public abstract class Pedido implements Despachable {
     }
 
 
-    public abstract void despacho();
+    //Metodo abstracto para separar el tipo de preparación del despacho
+
+
+    public abstract void prepararDdespacho();
 
     //Metodo para asignar nombre de repartidor al pedido de acuerdo a la información en main desde la clase repartidor
 

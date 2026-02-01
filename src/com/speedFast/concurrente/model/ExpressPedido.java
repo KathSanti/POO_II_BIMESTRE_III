@@ -7,7 +7,7 @@ public class ExpressPedido extends Pedido{
     }
 
     @Override
-    public void despacho() {
+    public void prepararDdespacho() {
         System.out.println("\nTipo de prepación : "+ " rayomacqueen" + "-" + "["+ idPedido +"]\n");
     }
 

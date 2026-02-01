@@ -8,7 +8,7 @@ public class EncomiendaPedido extends Pedido {
     }
 
     @Override
-    public void despacho() {
+    public void prepararDdespacho() {
         System.out.println("\nTipo de prepación : "+ " embalaje especial" + "-" + "["+ idPedido +"]\n");
     }
 
