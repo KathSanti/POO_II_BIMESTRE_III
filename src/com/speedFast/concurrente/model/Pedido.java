@@ -21,8 +21,8 @@ public abstract class Pedido implements Despachable {
 
     //Metodo abstracto para separar el tipo de preparación del despacho
 
-
     public abstract void prepararDdespacho();
+
 
     //Metodo para asignar nombre de repartidor al pedido de acuerdo a la información en main desde la clase repartidor
 
@@ -30,7 +30,6 @@ public abstract class Pedido implements Despachable {
         this.repartidor = nombre;
 
     }
-
 
 
     public void mostrarResumen(){
