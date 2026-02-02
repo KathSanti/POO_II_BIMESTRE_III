@@ -9,7 +9,7 @@
 * **Simulación en Tiempo Real:** Cálculo dinámico de tiempos de espera basado en distancias y tipos de pedido.
 
 
-##Arquitectura del Proyecto
+## Arquitectura del Proyecto
 
 El sistema está diseñado bajo una arquitectura modular dividida por responsabilidades:
 
