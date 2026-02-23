@@ -8,7 +8,7 @@ public class ConexionBD {
 
     private static final String URL = "jdbc:mysql://localhost:3306/speedfast_db";
     private static final String USER = "root";
-    private static final String PASSWORD = "Kth.20983Tft"; // Cambia por tu clave
+    private static final String PASSWORD = "ingresa tu clave"; // Cambia por tu clave
 
     public static Connection conectar() throws SQLException {
         return DriverManager.getConnection(URL, USER, PASSWORD);
