@@ -1,9 +1,9 @@
 # SISTEMA DE GESTIÓN SPEEDFAST
----
+
 
 **SpeedFast** es una aplicación de escritorio desarrollada en **Java** diseñada para gestionar las operaciones diarias de una empresa de despachos. El sistema permite administrar pedidos, repartidores y entregas a través de una interfaz gráfica, implementando una arquitectura orientada a objetos y persistencia de datos relacional.
 
-## CARACTERÍSTICAS PRINCIPALES
+## Características Principales
 ---
 
 * **Gestión de Pedidos (CRUD):** Registro, actualización, visualización y eliminación de pedidos. Incluye filtros dinámicos por tipo de pedido, estado y repartidor asignado.
@@ -20,6 +20,17 @@
 * **Base de Datos:** MySQL
 * **Conexión a BD:** JDBC (`PreparedStatement`, `ResultSet`, manejo de transacciones seguras con `try-with-resources`).
 * **Arquitectura:** * **Patrón DAO (Data Access Object):** Separación estricta entre la lógica de negocio y el acceso a la base de datos mediante interfaces (`PedidoDAO`, `RepartidorDAO`,
+
+## Estructura proyecto
+---
+
+* `/conexion`       : Configuración centralizada de la conexión JDBC (`ConexionBD`).
+* `/controladores`  : Lógica central del sistema, gestor de colas (`ZonadeCarga`) y enumeradores (`Estado`, `TipoPedido`).
+* `/dao`            : Implementación de las operaciones CRUD hacia la base de datos MySQL.
+* `/interfacesDAO`  : Contratos e interfaces para la persistencia de datos.
+* `/modelo`         : Clases base del dominio de la aplicación (`Pedido`, `Repartidor`, `Entrega`).
+* `/vista`          : Interfaces gráficas interactivas.
+* `/main`           : Punto de entrada principal de la aplicación.
 
 ## Configurar la Base de Datos:**
 
