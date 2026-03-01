@@ -12,7 +12,7 @@
 * **Entregas Automáticas (Multihilo):** Simulación de entregas en tiempo real utilizando hilos (`Threads`) y colas concurrentes (`PriorityBlockingQueue`). Los repartidores toman los pedidos pendientes automáticamente desde una "Zona de Carga" y actualizan su estado.
 * **Validaciones de Integridad:** Prevención de eliminación de registros que mantienen dependencias (llaves foráneas) en la base de datos, con alertas claras para el usuario.
 
-## TECNOLOGÍAS Y PATRONES DE DISEÑO
+## Diseño del proyecto
 ---
 
 * **Lenguaje:** Java
@@ -21,7 +21,7 @@
 * **Conexión a BD:** JDBC (`PreparedStatement`, `ResultSet`, manejo de transacciones seguras con `try-with-resources`).
 * **Arquitectura:** * **Patrón DAO (Data Access Object):** Separación estricta entre la lógica de negocio y el acceso a la base de datos mediante interfaces (`PedidoDAO`, `RepartidorDAO`,
 
-**2. Configurar la Base de Datos:**
+## Configurar la Base de Datos:**
 
 * Asegúrate de tener instalado MySQL.
 * Ejecuta el siguiente script SQL en tu gestor de base de datos para crear las tablas necesarias:
