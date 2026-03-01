@@ -4,7 +4,7 @@
 **SpeedFast** es una aplicación de escritorio desarrollada en **Java** diseñada para gestionar las operaciones diarias de una empresa de despachos. El sistema permite administrar pedidos, repartidores y entregas a través de una interfaz gráfica, implementando una arquitectura orientada a objetos y persistencia de datos relacional.
 
 ## Características Principales
----
+
 
 * **Gestión de Pedidos (CRUD):** Registro, actualización, visualización y eliminación de pedidos. Incluye filtros dinámicos por tipo de pedido, estado y repartidor asignado.
 * **Gestión de Repartidores (CRUD):** Administración completa de la flota de motoristas.
@@ -13,7 +13,6 @@
 * **Validaciones de Integridad:** Prevención de eliminación de registros que mantienen dependencias (llaves foráneas) en la base de datos, con alertas claras para el usuario.
 
 ## Diseño del proyecto
----
 
 * **Lenguaje:** Java
 * **Interfaz Gráfica:** Java Swing (`JFrame`, `JTable`, `JComboBox`, `TableRowSorter` para filtros en vivo).
@@ -22,7 +21,7 @@
 * **Arquitectura:** * **Patrón DAO (Data Access Object):** Separación estricta entre la lógica de negocio y el acceso a la base de datos mediante interfaces (`PedidoDAO`, `RepartidorDAO`,
 
 ## Estructura proyecto
----
+
 
 * `/conexion`       : Configuración centralizada de la conexión JDBC (`ConexionBD`).
 * `/controladores`  : Lógica central del sistema, gestor de colas (`ZonadeCarga`) y enumeradores (`Estado`, `TipoPedido`).
@@ -62,7 +61,7 @@ CREATE TABLE entregas (
 
 ```
 
-**3. Configurar Credenciales:**
+**. Configurar Credenciales:**
 
 * Navega al paquete `Speedfast.com.conexion`, abre la clase `ConexionBD` y ajusta las variables `USER` y `PASSWORD` según tu configuración local de MySQL.
 
