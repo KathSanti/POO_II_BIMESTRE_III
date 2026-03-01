@@ -48,6 +48,9 @@ CREATE TABLE entregas (
     FOREIGN KEY (id_pedido) REFERENCES pedidos(id),
     FOREIGN KEY (id_repartidor) REFERENCES repartidores(id)
 );
+
+```
+
 3. Configurar Credenciales:
 
 Navega al paquete Speedfast.com.conexion, abre la clase ConexionBD y ajusta las variables USER y PASSWORD según tu configuración local de MySQL.
@@ -59,15 +62,9 @@ Añade el driver mysql-connector-j a las dependencias de tu proyecto (vía Maven
 Ejecuta la clase Main.java.
 
 
----
+**El detalle clave está aquí:**
+Fíjate que justo después del `);` hay una línea nueva que **solo** tiene ` ``` `. Eso cerrará la caja negra del código y liberará el texto que está debajo.
 
-### Sobre la otra imagen (Las filas repetidas)
+Copia este bloque completo desde la palabra `FOREIGN` y reemplaza el final de tu archivo. ¡Con eso el cuadro negro se va a cerrar donde corresponde! 
 
-También vi la captura de tu aplicación y noté que el **Pedido 1 sale repetido 5 veces**. Esto significa que aún tienes la consulta SQL antigua en tu clase `PedidoDAOImpl` (la que usa `LEFT JOIN`). 
-
-Para que cada pedido salga solo **una vez**, ve a tu archivo `PedidoDAOImpl.java`, busca el método `readAll()` y cambia el `String sql` por este:
-
-```java
-String sql = "SELECT p.id, p.direccion, p.tipo, p.estado, " +
-             "(SELECT r.nombre FROM entregas e JOIN repartidores r ON e.id_repartidor = r.id WHERE e.id_pedido = p.id LIMIT 1) AS repartidor " +
-             "FROM pedidos p";
+¿Quieres que hagamos una revisión final del proyecto completo o del archivo `.zip` antes de qu
