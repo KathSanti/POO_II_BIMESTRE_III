@@ -51,20 +51,11 @@ CREATE TABLE entregas (
 
 ```
 
-3. Configurar Credenciales:
+**3. Configurar Credenciales:**
 
-Navega al paquete Speedfast.com.conexion, abre la clase ConexionBD y ajusta las variables USER y PASSWORD según tu configuración local de MySQL.
+* Navega al paquete `Speedfast.com.conexion`, abre la clase `ConexionBD` y ajusta las variables `USER` y `PASSWORD` según tu configuración local de MySQL.
 
-4. Ejecución:
+**4. Ejecución:**
 
-Añade el driver mysql-connector-j a las dependencias de tu proyecto (vía Maven o añadiendo el .jar al Build Path de tu IDE).
-
-Ejecuta la clase Main.java.
-
-
-**El detalle clave está aquí:**
-Fíjate que justo después del `);` hay una línea nueva que **solo** tiene ` ``` `. Eso cerrará la caja negra del código y liberará el texto que está debajo.
-
-Copia este bloque completo desde la palabra `FOREIGN` y reemplaza el final de tu archivo. ¡Con eso el cuadro negro se va a cerrar donde corresponde! 
-
-¿Quieres que hagamos una revisión final del proyecto completo o del archivo `.zip` antes de qu
+* Añade el driver `mysql-connector-j` a las dependencias deL proyecto
+* Ejecuta la clase `Main.java`.
