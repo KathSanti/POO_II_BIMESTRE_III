@@ -26,7 +26,6 @@
 * Asegúrate de tener instalado MySQL.
 * Ejecuta el siguiente script SQL en tu gestor de base de datos para crear las tablas necesarias:
 
-
 ```sql
 CREATE TABLE repartidores (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -51,11 +50,12 @@ CREATE TABLE entregas (
 );
 
 
-**3. Configurar Credenciales:**
+3. Configurar Credenciales:
 
-* Navega al paquete `Speedfast.com.conexion`, abre la clase `ConexionBD` y ajusta las variables `USER` y `PASSWORD` según tu configuración local de MySQL.
+Navega al paquete Speedfast.com.conexion, abre la clase ConexionBD y ajusta las variables USER y PASSWORD según tu configuración local de MySQL.
 
-**4. Ejecución:**
+4. Ejecución:
 
-* Añade el driver `mysql-connector-j` a las dependencias de tu proyecto (vía Maven o añadiendo el `.jar` al Build Path de tu IDE).
-* Ejecuta la clase `Main.java`.
+Añade el driver mysql-connector-j a las dependencias de tu proyecto (vía Maven o añadiendo el .jar al Build Path de tu IDE).
+
+Ejecuta la clase Main.java.
